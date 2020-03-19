@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="calendarapp.controllers.ScheduleViewController">
+   <children>
+      <SplitPane dividerPositions="0.135678391959799" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ComboBox fx:id="userCB" layoutX="141.0" layoutY="12.0" prefHeight="25.0" prefWidth="211.0" promptText="Select consultant" />
+                  <Label layoutX="24.0" layoutY="17.0" text="Select Consultant" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="appointmentListView" prefHeight="340.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="aptIdCol" prefWidth="54.0" text="ID" />
+                        <TableColumn fx:id="custNameCol" prefWidth="160.0" text="Customer Name" />
+                        <TableColumn fx:id="typeCol" minWidth="0.0" prefWidth="95.0" text="Type" />
+                        <TableColumn fx:id="startCol" prefWidth="134.0" text="Start" />
+                        <TableColumn fx:id="endCol" prefWidth="152.0" text="End" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

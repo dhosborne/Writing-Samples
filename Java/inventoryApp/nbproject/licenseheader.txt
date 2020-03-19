@@ -1,0 +1,9 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Inventory App
+${licensePrefix}Created by: Derek H. Osborne
+${licensePrefix}Inital Date: 20190619
+<#if licenseLast??>
+${licenseLast}
+</#if>

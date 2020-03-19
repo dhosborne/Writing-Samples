@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calendarapp.controllers.CountriesReportController">
+   <children>
+      <TableView fx:id="countriesTV" layoutX="83.0" layoutY="39.0" prefHeight="400.0" prefWidth="298.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="countryNameCol" prefWidth="212.0" text="Country" />
+          <TableColumn fx:id="counterCol" prefWidth="85.0" text="Count" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
