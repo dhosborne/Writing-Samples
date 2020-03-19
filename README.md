@@ -1,2 +1,2 @@
 # Writing-Samples
-Samples of programs i've written in various languages
+Samples of programs I've written in various languages
