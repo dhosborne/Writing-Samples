@@ -1,0 +1,37 @@
+0.  BMP: 2^24 | JPG: 2^24| GIF 2^8 | PNG 2^24
+
+1.  GIF
+
+2.  Lossless compression reduces the file size without losing image quality, though typically they result in larger file sizes.  Lossy compression algorithms discard "invisible information" in order to reduce file size, however the higher the compression level the more of the image is discarded, at the higest levels image quality can be effected.
+
+3.  JPG
+
+4.  When a file is deleted in the FAT file system, the pointer to the information is dereferenced and it is added to a list of available memory.  The data remains unchanged until the disk is again written to that "free" section of memory.
+
+5.  Using a algorithm that, "overwrites" the data the user desires to be "destroyed" is typically sufficent to ensure that the data in question is no longer recoverable.
+
+6.  This header deinfines a set of integral type aliases with specific width requirements, along with macros specifying their limits and macro functions to create values of these types. -www.cplus.com/refernce/cstdint
+
+7.  Using these conventions will ensure that a standard definition of the size will be used.  This will ensure that your int will be of the specifed lenght and not include buffer bits that would other wise be insterted by your compiler.
+
+8.  BYTE = 1BYTE | DWORD = 4BYTES | LONG = 4BYTES | WORD = 2BYTES
+
+9.  The first two leading bytes of a BMP image file must be BM.  These characters indicate to the OS that the file is infact a BMP and that it is not damaged. - http://en.wikipedia.org/wiki/BMP_file_format
+
+10. bfSize is the size of the entire BMP file in bytes. biSize refers to the size of the BITMAPINFOHEADER, which must be 40 bytes.
+
+11. A BMP with a negative biHeight value indicates that it is a "top-down DIB" with the origin at the upper left corner.  The image image will be drawn from top to bottom of the screen with buffer information. - https://msdn.microsoft.com/en-us/library/windows/desktop/dd407212%28v=vs.85%29.aspx
+
+12. biBitCount, in the BITMAPINFOHEADER indcates the BMP's color depth in bits per pixel.
+
+13. NULL retrun with the fopen functions can indicate that either the destination file name/path is invalid, or that the user does not have permission to write that file.
+
+14. We are reading 1-element', that is sizeof(element_being_read).
+
+15. "0"
+
+16. fseek is used when you would like to change the offset of the file pointer. -https://reference.cs50.net/stdio.h/fseek
+
+17. SEEK_CUR indicates how to set the offset in relation to the begining of the file.  SEEK_CUR refers to the current file position. -http://www.gnu.org/software/libc/manual/html_node/File-Positioning.html
+
+18. Milo Banana dun it.
