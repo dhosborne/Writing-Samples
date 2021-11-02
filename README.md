@@ -1,2 +1,2 @@
 # Writing-Samples
-Samples of programs i've written in various languages
+Repository of programs written for school or work
